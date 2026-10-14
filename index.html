@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workday Integrations Practice</title>
+<meta name="description" content="Free scenario-based practice exam for the Workday Integrations certification — learning mode with explanations and a timed exam mode.">
+<style>
+:root{
+  --blue:#0875e1; --blue-dark:#005cb9; --blue-soft:#e8f1fc;
+  --ink:#1f2933; --ink-soft:#4a5560; --ink-faint:#767676;
+  --paper:#ffffff; --bg:#f6f7f9; --line:#d4d9e0; --arch:#f38b00;
+  --shadow:0 1px 3px rgba(30,42,58,.10), 0 4px 14px rgba(30,42,58,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root{--ink:#e8ecf1; --ink-soft:#b8c1cc; --ink-faint:#8a95a1; --paper:#1b2129; --bg:#12161c; --line:#2e3742; --blue-soft:#13283f;}
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--blue)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:22px 0 8px;display:flex;align-items:center;gap:10px}
+header .name{font-weight:600;font-size:1.15rem}
+header .dot{color:var(--arch)}
+.hero{padding:48px 0 36px}
+.eyebrow{display:inline-block;background:var(--blue-soft);color:var(--blue);font-weight:600;font-size:.82rem;padding:4px 12px;border-radius:999px;letter-spacing:.02em}
+h1{font-size:clamp(1.9rem,4.5vw,2.8rem);line-height:1.15;margin:16px 0 14px;font-weight:700;letter-spacing:-.01em}
+.lede{font-size:1.1rem;color:var(--ink-soft);max-width:60ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:600}
+.btn:hover{background:var(--blue-dark)}
+.btn.ghost{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:8px 0 40px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px;box-shadow:var(--shadow)}
+.stat b{display:block;font-size:1.6rem;font-variant-numeric:tabular-nums}
+.stat span{color:var(--ink-faint);font-size:.86rem}
+h2{font-size:1.35rem;margin:0 0 14px}
+section{margin-bottom:44px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px;box-shadow:var(--shadow)}
+.card h3{font-size:1.05rem;margin-bottom:6px}
+.card p{color:var(--ink-soft);font-size:.95rem}
+.domains{display:grid;gap:10px}
+.dom{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:center}
+.dom .label{font-size:.95rem}
+.dom .pct{font-variant-numeric:tabular-nums;color:var(--ink-faint);font-size:.88rem}
+.dom .track{grid-column:1/-1;height:8px;background:var(--bg);border-radius:4px;overflow:hidden;border:1px solid var(--line)}
+.dom .fill{height:100%;border-radius:4px}
+ol.steps{list-style:none;counter-reset:s;display:grid;gap:12px}
+ol.steps li{counter-increment:s;display:flex;gap:14px;align-items:flex-start}
+ol.steps li::before{content:counter(s);flex:none;width:28px;height:28px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.banner{background:var(--blue);color:#fff;border-radius:12px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.banner h2{margin:0;color:#fff}
+.banner .btn{background:#fff;color:var(--blue)}
+footer{color:var(--ink-faint);font-size:.84rem;padding:10px 0 40px}
+@media (max-width:680px){.stats{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 26 A14 14 0 0 1 34 26" fill="none" stroke="var(--arch)" stroke-width="4" stroke-linecap="round"/></svg>
+    <span class="name">Workday Integrations<span class="dot">.</span> Practice</span>
+  </header>
+
+  <div class="hero">
+    <span class="eyebrow">Certification prep · free · no sign-up</span>
+    <h1>Get exam-ready for the Workday Integrations certification</h1>
+    <p class="lede">Scenario-based questions covering connectors, RaaS, REST/SOAP/WQL and Workday Orchestrate. Learn with explanations for every option, then test yourself under timed, blueprint-weighted conditions.</p>
+    <div class="cta">
+      <a class="btn" href="integrations-exam.html">Open the practice exam →</a>
+      <a class="btn ghost" href="#how">How it works</a>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><b>202</b><span>practice questions</span></div>
+    <div class="stat"><b>7</b><span>exam domains</span></div>
+    <div class="stat"><b>75%</b><span>pass bar</span></div>
+    <div class="stat"><b>60 min</b><span>for 20 questions</span></div>
+  </div>
+
+  <section>
+    <h2>Two ways to practice</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>📘 Learning mode</h3>
+        <p>Work through the full bank at your own pace. After each answer you'll see why the right choice is right and why every wrong choice is wrong. Filter by domain to drill weak spots.</p>
+      </div>
+      <div class="card">
+        <h3>⏱️ Exam mode</h3>
+        <p>A timed mock exam weighted to the blueprint, in a Questionmark-style layout with progress bar, flagging and a question navigator. Choose 20, 40 or 60 questions and get a domain-by-domain score with full review.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What's covered</h2>
+    <div class="card domains" id="domains"></div>
+  </section>
+
+  <section id="how">
+    <h2>How to use it</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><div>Open the <a href="integrations-exam.html">practice exam</a> and start in <b>Learning mode</b>, going domain by domain.</div></li>
+        <li><div>Read every explanation — including for options you ruled out. The wrong answers teach the distinctions the real exam tests.</div></li>
+        <li><div>Switch to <b>Exam mode</b> (20 questions, 60 minutes) once you're scoring well, and use the domain breakdown to find gaps.</div></li>
+        <li><div>Repeat with fresh exams — questions and answer order are shuffled each time.</div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="banner">
+      <h2>Ready to start?</h2>
+      <a class="btn" href="integrations-exam.html">Open the practice exam →</a>
+    </div>
+  </section>
+
+  <footer>Unofficial study aid built from public course topics and blueprint weighting. Not affiliated with or endorsed by Workday, Inc. Everything runs in your browser — nothing is stored or sent anywhere.</footer>
+</div>
+<script>
+const D=[
+ ["Connectors, Connector Security & Calculated Fields",22,"#0875e1"],
+ ["Integration Basics & Reporting / RaaS",11,"#59c3e8"],
+ ["REST APIs, SOAP APIs & WQL",16,"#f38b00"],
+ ["Build an Orchestration, Code & Flow Control",16,"#ffb84d"],
+ ["Inbound & Outbound Orchestration",11,"#7a5fd0"],
+ ["Reuse Code & Secure Orchestrations",14,"#1e8a44"],
+ ["Troubleshoot Connectors & Orchestrations",10,"#d13c30"]];
+document.getElementById("domains").innerHTML=D.map(([n,w,c])=>
+ `<div class="dom"><span class="label">${n}</span><span class="pct">${w}%</span><div class="track"><div class="fill" style="width:${w/22*100}%;background:${c}"></div></div></div>`).join("");
+</script>
+</body>
+</html>
